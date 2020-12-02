@@ -1,8 +1,6 @@
 Docker for xai2shiny applications
 =======================
 
-![](https://img.shields.io/docker/build/adamoso/xai2shiny.svg)
-
 This is a Dockerfile for xai2shiny R package applications. It is heavily based on [rocker/shiny](https://hub.docker.com/r/rocker/shiny) with added necessary packages for xai2shiny applications:
 - "shiny", "shinyjs", "shinyBS", "shinydashboard", "shinycssloaders", "shinyWidgets", "DALEX" and "ggplot2".
 
