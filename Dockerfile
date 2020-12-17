@@ -19,7 +19,7 @@ RUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION 
     gdebi -n ss-latest.deb && \
     rm -f version.txt ss-latest.deb && \
     . /etc/environment && \
-    R -e "install.packages(c('shiny', 'rmarkdown', 'DALEX', 'shinyjs', 'shinyBS', 'shinydashboard', 'shinyWidgets', 'shinycssloaders', 'ingredients', 'iBreakDown'))" && \
+    R -e "install.packages(c('shiny', 'rmarkdown', 'ggplot2', 'DALEX', 'shinyjs', 'shinyBS', 'shinydashboard', 'shinyWidgets', 'shinycssloaders', 'ingredients', 'iBreakDown'))" && \
     cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/ && \
     chown shiny:shiny /var/lib/shiny-server
 
